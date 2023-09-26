@@ -19,9 +19,11 @@
 .flex{
     display: flex;
 }
-
+.j-center{
+    justify-content: center;
+}
 .col-gap{
-    column-gap: 10px;
+    column-gap: 15px;
 }
 
 .align-center{
@@ -50,6 +52,9 @@
 /* bordi */
 .border-left{
     border-left: 2px solid var(--color-highlight);
+}
+.border-bottom{
+    border-bottom: 2px solid var(--color-highlight);
 }
 /* layout */
 .wrapper{
@@ -83,7 +88,7 @@
     width: 100%;
 }
 
-nav{
+.nav{
     height: 100px;
     width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, 0.448);
@@ -94,7 +99,7 @@ nav{
 }
 
 .card-container{
-    padding-top: 110px;
+    margin-top: 110px;
     height: calc(100% - 150px);
 }
 
@@ -104,6 +109,9 @@ nav{
 }
 .bold{
     font-weight: bold;
+}
+.text-center{
+    text-align: center;
 }
 .text-white{
     color: var(--color-white);
@@ -130,19 +138,19 @@ sup > i{
 ul{
     list-style: none;
 }
-ul li{
-    width: 100%;
+.plus{
+    font-size: 1.2em;
 }
-
 .plus-box{
-    width: 35px;
-    height: 35px;
-    background-color: var(--color-light-grey);
+    width: 50px;
+    height: 50px;
     color: var(--color-black);
     text-align: center;
     line-height: 35px;
 }
-
+.plus-box img{
+    width: 100%;
+}
 ul.px-20{
     padding-top: 15px;
 }
@@ -166,4 +174,12 @@ ul.px-20 li{
     background-color: var(--color-grey);
     border-radius: 50%;
     filter: none;
+}
+
+/* main container */
+.main-container img{
+    width: 100%;
+}
+.card{
+    width: calc(100% / 6);
 }
