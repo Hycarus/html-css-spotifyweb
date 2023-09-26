@@ -136,6 +136,9 @@
 .side-bar > div:first-child div:last-child{
     font-size: 2em;
 }
+.side-bar{
+    overflow-y: hidden;
+}
 sup > i{
     font-size: 0.3em;
 }
@@ -157,6 +160,8 @@ ul{
 }
 ul.px-20{
     padding-top: 15px;
+    overflow-y: auto;
+    height: 300px;
 }
 ul.px-20 li{
     padding: 15px 0;
