@@ -131,7 +131,7 @@
     color: var(--color-grey);
 }
 .font-size-2em{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 /* position */
@@ -253,13 +253,16 @@ ul.px-20 li{
     max-width: 10%;
 }
 .music-bar{
-    width: 500px;
+    width: 100%;
 }
 .play-bar .fa-circle-play{
     position: static;
-    font-size: 3em;
+    font-size: 2.5em;
     transform: translate(0, 0);
 }
 .play-bar-container{
     width: calc(100% / 3);
+}
+.bar-container{
+    width: 100%;
 }
