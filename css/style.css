@@ -120,6 +120,11 @@
     color: var(--color-grey);
 }
 
+
+/* position */
+.relative{
+    position: relative;
+}
 /* sidebar */
 .side-bar img{
     width: 15%;
@@ -187,4 +192,10 @@ ul.px-20 li{
 }
 .circle{
     border-radius: 50%;
+}
+.underline{
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-20px, 5px);
 }
