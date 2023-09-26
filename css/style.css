@@ -13,11 +13,51 @@
 	--color-light-grey: #c1c1c1;
 	--color-highlight: #adff2f;
 }
+/* utility */
 
+/* flex */
+.flex{
+    display: flex;
+}
+
+.col-gap{
+    column-gap: 10px;
+}
+
+.align-center{
+    align-items: center;
+}
+/* padding */
+.px-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* bordi */
+.border-left{
+    border-left: 2px solid var(--color-highlight);
+}
+/* layout */
 .wrapper{
     width: 100vw;
     height: 100vh;
     background-color: var(--color-dark-color);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 .side-bar{
@@ -27,8 +67,10 @@
 }
 
 .container{
-    width: calc(100vw - 250px);
-    height: calc(100% - 100px);
+    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+
 }
 
 .play-bar{
@@ -41,11 +83,55 @@
 }
 
 nav{
-    height: 150px;
+    height: 100px;
     width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, 0.448);
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
+}
+
+.card-container{
+    padding-top: 110px;
+
+    height: calc(100% - 150px);
+}
+
+/* testo */
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+/* sidebar */
+.side-bar:first-child{
+    color: var(--color-white);
+    font-size: 2em;
+}
+.side-bar > div span{
+    padding-left: 10px;
+}
+.fa-spotify{
+    font-size: 1.5em;
+}
+sup > i{
+    font-size: 0.3em;
+}
+ul{
+    list-style: none;
+}
+li div:last-child{
+    font-size: 0.6em;
+    color: var(--color-light-grey);
+}
+li div:first-child{
+    color: var(--color-light-grey);
+}
+ul li{
+    width: 100%;
+}
+.px-20.py-20.uppercase{
+    font-size: 0.6em;
+    font-weight: bold;
 }
