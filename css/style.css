@@ -13,3 +13,8 @@
 	--color-light-grey: #c1c1c1;
 	--color-highlight: #adff2f;
 }
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
