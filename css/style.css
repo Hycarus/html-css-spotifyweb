@@ -25,7 +25,9 @@
 .col-gap{
     column-gap: 15px;
 }
-
+.flex-end{
+    justify-content: flex-end;
+}
 .align-center{
     align-items: center;
 }
@@ -82,9 +84,6 @@
 .play-bar{
     height: 100px;
     background-color: var(--color-dark-grey);
-    position: fixed;
-    bottom: 0;
-    z-index: 1000;
     width: 100%;
 }
 
@@ -184,6 +183,12 @@ ul.px-20 li{
 }
 
 /* main container */
+.nav > div{
+    border: 1px solid var(--color-white);
+    margin: 0 30px;
+    padding: 15px 50px;
+    border-radius: 40px;
+}
 .main-container img{
     width: 100%;
 }
