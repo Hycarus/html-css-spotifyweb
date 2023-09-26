@@ -252,9 +252,6 @@ ul.px-20 li{
 .play-bar img{
     max-width: 10%;
 }
-.music-bar{
-    width: 100%;
-}
 .play-bar .fa-circle-play{
     position: static;
     font-size: 2.5em;
@@ -266,3 +263,26 @@ ul.px-20 li{
 .bar-container{
     width: 100%;
 }
+.music-bar{
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    background-color: var(--color-grey); 
+    width: 100%;
+    border-radius: 20px;
+  }
+  .music-bar::-webkit-slider-runnable-track{
+    height: 5px;
+    border-radius: 20px;
+  }
+  .music-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: calc((5px / 2) - (12px / 2));
+    background: var(--color-light-grey);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: -250px 0 0 250px var(--color-white)
+  }
