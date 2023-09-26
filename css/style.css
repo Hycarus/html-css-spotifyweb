@@ -64,6 +64,7 @@
     width: 250px;
     height: calc(100vh - 100px);
     background-color: var(--color-black);
+    position: relative;
 }
 
 .container{
@@ -94,7 +95,6 @@ nav{
 
 .card-container{
     padding-top: 110px;
-
     height: calc(100% - 150px);
 }
 
@@ -102,18 +102,27 @@ nav{
 .uppercase{
     text-transform: uppercase;
 }
-
+.bold{
+    font-weight: bold;
+}
+.text-white{
+    color: var(--color-white);
+}
+.text-grey{
+    color: var(--color-grey);
+}
 
 /* sidebar */
-.side-bar:first-child{
-    color: var(--color-white);
+.side-bar img{
+    width: 15%;
+    filter: invert(46%) sepia(1%) saturate(2%) hue-rotate(349deg) brightness(94%) contrast(81%);
+}
+#logo{
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(139deg) brightness(106%) contrast(101%);
+    width: 150%;
+}
+.side-bar > div:first-child div:last-child{
     font-size: 2em;
-}
-.side-bar > div span{
-    padding-left: 10px;
-}
-.fa-spotify{
-    font-size: 1.5em;
 }
 sup > i{
     font-size: 0.3em;
@@ -121,17 +130,40 @@ sup > i{
 ul{
     list-style: none;
 }
-li div:last-child{
-    font-size: 0.6em;
-    color: var(--color-light-grey);
-}
-li div:first-child{
-    color: var(--color-light-grey);
-}
 ul li{
     width: 100%;
 }
-.px-20.py-20.uppercase{
-    font-size: 0.6em;
-    font-weight: bold;
+
+.plus-box{
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-light-grey);
+    color: var(--color-black);
+    text-align: center;
+    line-height: 35px;
+}
+
+ul.px-20{
+    padding-top: 15px;
+}
+ul.px-20 li{
+    padding: 15px 0;
+}
+.dl{
+    border-bottom: 1px solid var(--color-light-grey);
+    margin: 0 20px;
+}
+.dl img{
+    width: 8%;
+}
+.bottom-side-bar{
+    position: absolute;
+    bottom: 0;
+}
+.bottom-side-bar div:last-child img{
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-grey);
+    border-radius: 50%;
+    filter: none;
 }
