@@ -110,10 +110,10 @@
     height: 100px;
     width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, 0.448);
-    /* position: fixed;
+    position: fixed;
     top: 0;
     right: 0;
-    z-index: 1000; */
+    z-index: 1000;
 }
 .card-container{
     margin-top: 110px;
@@ -200,10 +200,19 @@ ul.px-20 li{
 .nav-playlist{
     overflow-y: hidden;
     height: 60%;
+    min-height: 480px;
 }
 .top-side-bar{
     height: calc(100% - 80px);
     overflow-y: hidden;
+}
+.top-side-bar .flex{
+    height: 15%;
+    min-height: 55px;
+}
+.top-side-bar > ul{
+    height: 25%;
+    min-height: 150px;
 }
 .bottom-side-bar{
     height: 80px;
