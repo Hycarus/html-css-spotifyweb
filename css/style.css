@@ -90,7 +90,6 @@
     width: 250px;
     height: 100%;
     background-color: var(--color-black);
-    overflow-y: hidden;
     min-height: 480px;
 }
 .container{
@@ -211,7 +210,7 @@ ul{
 }
 ul.px-20{
     overflow-y: auto;
-    height: 80%;
+    height: 70%;
 }
 ul.px-20 li{
     padding: 7px 0;
@@ -225,20 +224,11 @@ ul.px-20 li{
 }
 .nav-playlist{
     overflow-y: hidden;
-    height: 60%;
-    min-height: 480px;
+    padding: 20px;
 }
 .top-side-bar{
     height: calc(100% - 80px);
     overflow-y: hidden;
-}
-.top-side-bar .flex{
-    height: 15%;
-    min-height: 55px;
-}
-.top-side-bar > ul{
-    height: 25%;
-    min-height: 150px;
 }
 .bottom-side-bar{
     height: 80px;
