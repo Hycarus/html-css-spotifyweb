@@ -40,6 +40,11 @@
 .flex-col{
     flex-direction: column;
 }
+/* margin */
+.mx-10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 /* padding */
 .px-20{
     padding-left: 20px;
@@ -76,39 +81,40 @@
     height: 100vh;
     background-color: var(--color-dark-color);
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+    overflow: hidden;
 }
-
+.ciccio{
+    height: calc(100% - 100px);
+}
 .side-bar{
     width: 250px;
-    height: calc(100vh - 100px);
+    height: 100%;
     background-color: var(--color-black);
-    position: relative;
+    overflow-y: hidden;
+    min-height: 480px;
 }
-
 .container{
     width: calc(100% - 250px);
-    height: calc(100vh - 100px);
     overflow-y: scroll;
-
 }
-
 .play-bar{
     height: 100px;
     background-color: var(--color-dark-grey);
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
-
 .nav{
     height: 100px;
     width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, 0.448);
-    position: fixed;
+    /* position: fixed;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; */
 }
-
 .card-container{
     margin-top: 110px;
     height: calc(100% - 150px);
@@ -139,6 +145,9 @@
 .font-size-08em{
     font-size: 0.8em;
 }
+.decoration-none{
+    text-decoration: none;
+}
 /* position */
 .relative{
     position: relative;
@@ -152,11 +161,8 @@
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(139deg) brightness(106%) contrast(101%);
     width: 150%;
 }
-.side-bar > div:first-child div:last-child{
+.top-side-bar > div:first-child div:last-child{
     font-size: 2em;
-}
-.side-bar{
-    overflow-y: hidden;
 }
 sup > i{
     font-size: 0.3em;
@@ -178,12 +184,11 @@ ul{
     width: 100%;
 }
 ul.px-20{
-    padding-top: 15px;
     overflow-y: auto;
-    height: 300px;
+    height: 80%;
 }
 ul.px-20 li{
-    padding: 15px 0;
+    padding: 7px 0;
 }
 .dl{
     border-bottom: 1px solid var(--color-light-grey);
@@ -192,11 +197,16 @@ ul.px-20 li{
 .dl img{
     width: 8%;
 }
+.nav-playlist{
+    overflow-y: hidden;
+    height: 60%;
+}
+.top-side-bar{
+    height: calc(100% - 80px);
+    overflow-y: hidden;
+}
 .bottom-side-bar{
-    position: absolute;
-    bottom: 0;
-    z-index: 1000;
-    background-color: var(--color-black);
+    height: 80px;
 }
 .bottom-side-bar div:last-child img{
     width: 25px;
@@ -229,6 +239,9 @@ ul.px-20 li{
 .active .underline,  
 .nav-main li:hover .underline{
     background-color: var(--color-highlight);
+}
+.nav-main li{
+    cursor: pointer;
 }
 .underline{
     background-color: transparent;
