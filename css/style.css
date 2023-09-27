@@ -45,6 +45,10 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+.my-10{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 /* padding */
 .px-20{
     padding-left: 20px;
@@ -83,14 +87,14 @@
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 }
-.ciccio{
+.big-container{
     height: calc(100% - 100px);
 }
 .side-bar{
     width: 250px;
     height: 100%;
     background-color: var(--color-black);
-    min-height: 480px;
+    /* min-height: 480px; */
 }
 .container{
     width: calc(100% - 250px);
@@ -103,7 +107,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 2000;
 }
 .nav{
     height: 100px;
@@ -112,10 +116,10 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1500;
 }
 .card-container{
-    margin-top: 110px;
+    padding-top: 110px;
     height: calc(100% - 150px);
 }
 
@@ -153,12 +157,17 @@
 }
 /* sidebar */
 .side-bar img{
-    width: 15%;
+    width: 37px;
+    height: 37px;
     filter: invert(46%) sepia(1%) saturate(2%) hue-rotate(349deg) brightness(94%) contrast(81%);
 }
+#small-logo{
+    display: none;
+    filter: none;
+}
 #logo{
-    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(139deg) brightness(106%) contrast(101%);
-    width: 150%;
+    filter: none;
+    width: 100%;
 }
 .hover-green:hover, #logo:hover .hover-green{
     filter: invert(70%) sepia(91%) saturate(350%) hue-rotate(34deg) brightness(154%) contrast(250%);    
@@ -172,8 +181,8 @@
 .hover-white:hover .hover-menu-white{
     color: var(--color-white);
 }
-.hover-white:hover .border-left{
-    border-left: 1px solid var(--color-highlight);
+.active-left, .border-left:hover{
+    border-left: 2px solid var(--color-highlight);
 }
 .hover-white:hover .filter-plus-white{
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(92deg) brightness(107%) contrast(101%);
@@ -184,7 +193,7 @@
 }
 .active-left,
 .top-side-bar li:hover .border-left{
-    border-left: 1px solid var(--color-highlight);
+    border-left: 2px solid var(--color-highlight);
 }
 .top-side-bar > div:first-child div:last-child{
     font-size: 2em;
@@ -224,7 +233,6 @@ ul.px-20 li{
 }
 .nav-playlist{
     overflow-y: hidden;
-    padding: 20px;
 }
 .top-side-bar{
     height: calc(100% - 80px);
@@ -281,9 +289,10 @@ ul.px-20 li{
 .underline{
     background-color: transparent;
     width: 40px;
-    height: 3px;
+    height: 2px;
     margin: 0 auto;
-    transition: 0.5s;
+    transition: all 0.5s;
+    border-radius: 20px;
 }
 .hover{
     opacity: 0;
@@ -397,5 +406,66 @@ a .play-button{
             padding-left: 0;
             padding-right: 0;
         }
-        
+  }
+  @media screen and (max-width:576px){
+    .card{
+        width: calc(100% / 2);
+        padding: 0 10px;
+    }
+    .nav-playlist{
+        display: none;
+    }
+    .bottom-side-bar div > div:last-child{
+        display: none;
+    }
+    .bottom-side-bar div:last-child{
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+    }
+    .dl{
+        border-bottom: none;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    a span:last-child{
+        display: none;
+    }
+    .border-left.px-20{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .side-bar{
+        width: 60px;
+    }
+    .container{
+        width: calc(100% - 50px);
+    }
+    .nav{
+        width: calc(100% - 50px);
+    }
+    .dl img{
+        width: 40%;
+        transform: translate(-2px, 0);
+    }
+    .top-side-bar{
+        align-content: center;
+        align-items: center;
+    }
+    .bottom-side-bar{
+        height: auto;
+    }
+    .top-side-bar div:first-child{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #logo{
+        display: none;
+    }
+    #small-logo{
+        display: flex;
+    }
+    .active-left{
+        border: 2px solid transparent;
+    }
   }
