@@ -133,7 +133,12 @@
 .font-size-2em{
     font-size: 1.5em;
 }
-
+.font-size-1em{
+    font-size: 1em;
+}
+.font-size-08em{
+    font-size: 0.8em;
+}
 /* position */
 .relative{
     position: relative;
@@ -208,6 +213,10 @@ ul.px-20 li{
     padding: 15px 50px;
     border-radius: 40px;
 }
+.nav-main{
+    width: 100%;
+    font-size: 0.7em;
+}
 .main-container img{
     width: 100%;
 }
@@ -235,22 +244,27 @@ ul.px-20 li{
     transition: all 0.5s;
 
 }
-.fa-circle-play{
+a .play-button{
+    filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(16deg) brightness(108%) contrast(103%);
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--color-white);
-    font-size: 5em;
 }
+
 .img-container:hover .hover{
     opacity: 1;
     background-color: #00000059;
 }
 
 /* playbar */
+.img-play-bar-container{
+    min-width: 50px;
+    width: 50px;
+}
 .play-bar img{
-    max-width: 10%;
+    max-width: 100%;
 }
 .play-bar .fa-circle-play{
     position: static;
@@ -284,4 +298,52 @@ ul.px-20 li{
     border-radius: 50%;
     cursor: pointer;
     box-shadow: -250px 0 0 250px var(--color-light-grey)
+  }
+
+  /* media query */
+  @media screen and (max-width: 992px) {
+    .card{
+        width: calc(100% / 3);
+        padding: 0 10px;
+    }
+    .main-container section:first-child .flex.col-gap{
+        flex-wrap: wrap;
+        column-gap: normal;
+    }
+    .play-bar-container.right{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .play-bar-container.right .text-white{
+        padding-bottom: 10px;
+    }
+    .play-bar-container.left, .play-bar-container.right{
+        width: 25%;
+    }
+    .play-bar-container.center i{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+        .card{
+            width: calc(100% / 4);
+            padding: 0 10px;
+        }
+        .play-bar-container.left div:nth-child(2){
+            padding-right: 0;
+        }
+        .play-bar-container.center i{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+       
+        .play-bar-container.center{
+            width: 40%;
+        }
+        .play-bar-container.left div:last-child{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
   }
