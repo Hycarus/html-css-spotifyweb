@@ -161,6 +161,15 @@
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(139deg) brightness(106%) contrast(101%);
     width: 150%;
 }
+.hover-green:hover, #logo:hover .hover-green{
+    filter: invert(70%) sepia(91%) saturate(350%) hue-rotate(34deg) brightness(154%) contrast(250%);    
+}
+.hover-white:hover{
+    color: var(--color-white);
+}
+.hover-green, .hover-white{
+    transition: all 0.3s;
+}
 .top-side-bar > div:first-child div:last-child{
     font-size: 2em;
 }
@@ -232,6 +241,7 @@ ul.px-20 li{
     padding: 15px 50px;
     border-radius: 40px;
 }
+
 .nav-main{
     width: 100%;
     font-size: 0.7em;
@@ -269,7 +279,6 @@ ul.px-20 li{
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.5s;
-
 }
 a .play-button{
     filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(16deg) brightness(108%) contrast(103%);
@@ -372,5 +381,7 @@ a .play-button{
             padding-left: 0;
             padding-right: 0;
         }
-        
+        .nav a{
+            width: 40%;
+        }
   }
