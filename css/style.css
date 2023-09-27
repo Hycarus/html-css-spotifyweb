@@ -353,7 +353,7 @@ a .play-button{
   /* media query */
   @media screen and (max-width: 992px) {
     .card{
-        width: calc(100% / 3);
+        width: calc(100% / 4);
         padding: 0 10px;
     }
     .main-container section:first-child .flex.col-gap{
@@ -377,7 +377,7 @@ a .play-button{
   }
   @media screen and (max-width: 768px) {
         .card{
-            width: calc(100% / 4);
+            width: calc(100% / 3);
             padding: 0 10px;
         }
         .play-bar-container.left div:nth-child(2){
@@ -395,7 +395,5 @@ a .play-button{
             padding-left: 0;
             padding-right: 0;
         }
-        .nav a{
-            width: 40%;
-        }
+        
   }
