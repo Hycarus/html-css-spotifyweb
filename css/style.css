@@ -362,7 +362,7 @@ a .play-button{
   }
 
   /* media query */
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width:1200px) {
     .card{
         width: calc(100% / 4);
         padding: 0 10px;
@@ -386,9 +386,15 @@ a .play-button{
         padding-right: 15px;
     }
   }
+  @media screen and (max-width: 992px) {
+    .card{
+        width: calc(100% / 3);
+        padding: 0 10px;
+    }
+  }
   @media screen and (max-width: 768px) {
         .card{
-            width: calc(100% / 3);
+            width: calc(100% / 2);
             padding: 0 10px;
         }
         .play-bar-container.left div:nth-child(2){
