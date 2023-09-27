@@ -226,11 +226,16 @@ ul.px-20 li{
 .circle{
     border-radius: 50%;
 }
+.active .underline,  
+.nav-main li:hover .underline{
+    background-color: var(--color-highlight);
+}
 .underline{
+    background-color: transparent;
     width: 40px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-20px, 5px);
+    height: 3px;
+    margin: 0 auto;
+    transition: 0.5s;
 }
 .hover{
     opacity: 0;
