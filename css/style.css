@@ -275,14 +275,9 @@ ul.px-20 {
 ul.px-20 li {
     padding: 7px 0;
 }
-
-.dl {
-    border-bottom: 1px solid var(--color-light-grey);
+.border{
+    border: 1px solid var(--color-grey);
     margin: 0 20px;
-}
-
-.dl img {
-    width: 8%;
 }
 
 .nav-playlist {
@@ -305,7 +300,14 @@ ul.px-20 li {
     border-radius: 50%;
     filter: none;
 }
-
+.dl img{
+    width: 50%;
+    margin: 0 auto;
+    transform: translate(2px, 0);
+}
+.bottom-side-bar a:hover{
+    color: var(--color-highlight);
+}
 /* main container */
 .nav>div a {
     border: 1px solid var(--color-white);
@@ -397,9 +399,7 @@ a .play-button {
 }
 
 .play-bar .fa-circle-play {
-    position: static;
     font-size: 2.5em;
-    transform: translate(0, 0);
 }
 
 .play-bar-container {
@@ -514,7 +514,7 @@ a .play-button {
         display: none;
     }
 
-    .bottom-side-bar div>div:last-child {
+    .bottom-side-bar div>a:last-child {
         display: none;
     }
 
@@ -522,12 +522,6 @@ a .play-button {
         padding-left: 0;
         padding-right: 0;
         justify-content: center;
-    }
-
-    .dl {
-        border-bottom: none;
-        justify-content: center;
-        margin: 0 auto;
     }
 
     a span:last-child {
@@ -543,7 +537,9 @@ a .play-button {
         width: 60px;
         margin: 0 auto;
     }
-
+    .border{
+        border: none;
+    }
     .container {
         width: calc(100% - 50px);
     }
@@ -553,7 +549,6 @@ a .play-button {
     }
 
     .dl img {
-        width: 40%;
         transform: translate(-1px, 0);
     }
 
