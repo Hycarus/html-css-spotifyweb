@@ -621,6 +621,13 @@ a .play-button {
     .fa-volume-high {
         padding-top: 20px;
     }
+    .active-left,
+    .border-left:hover{
+        border-left: transparent;
+    }
+    .side-bar .hover-white:hover{
+        color: var(--color-highlight);
+    }
 }
 
 @media screen and (max-width:300px) {
