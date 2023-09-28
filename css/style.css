@@ -401,7 +401,9 @@ a .play-button {
 .play-bar .fa-circle-play {
     font-size: 2.5em;
 }
-
+.play-bar .fa-circle-play:hover{
+    transform: scale(1.2);
+}
 .play-bar-container {
     width: calc(100% / 3);
 }
